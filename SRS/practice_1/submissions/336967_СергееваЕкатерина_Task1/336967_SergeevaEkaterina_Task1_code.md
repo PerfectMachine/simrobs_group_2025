@@ -37,7 +37,7 @@ def analytical_solution(t, x0):
     print(f"λ1 = {lambda1}, λ2 = {lambda2}")
     print(f"Частное решение x_p = {x_particular}")
     print(f"Константы: C1 = {C1:.6f}, C2 = {C2:.6f}")
-    print(f"Проверка: C1 + C2 = {C1 + C2:.6f} (должно быть {x0_pos - x_particular:.6f})")
+
 
     return C1*np.exp(lambda1*t) + C2*np.exp(lambda2*t) + x_particular
 
